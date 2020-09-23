@@ -8,7 +8,7 @@ import List from './screens/ItemScreen/list';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Searchbar from './SearchBar/index';
+//import Searchbar from './SearchBar/index';
 
 import Tabnavigator from './component/bottomTab';
 import HomeScreen from './screens/HomeScreen/HomeScreen';
