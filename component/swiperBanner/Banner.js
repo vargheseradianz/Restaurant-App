@@ -7,7 +7,8 @@ import {
   FlatList,
   Animated,
 } from 'react-native';
-import CarouselItem from './CarouselItem';
+import { Banner } from 'react-native-paper';
+import BannerItem from './BannerItem';
 
 const { width, heigth } = Dimensions.get('window');
 let flatList;
@@ -56,7 +57,7 @@ const Carousel = ({ data }) => {
           decelerationRate={'fast'}
           showsHorizontalScrollIndicator={false}
           renderItem={({ item }) => {
-            return <CarouselItem item={item} />;
+            return <BannerItem item={item} />;
           }}
           onScroll={Animated.event([
             { nativeEvent: { contentOffset: { x: scrollX } } },

@@ -5,16 +5,8 @@ import { createMaterialBottomTabNavigator } from 'react-navigation-material-bott
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import HomeScreen from '../screens/HomeScreen/HomeScreen';
+import ProfileScreen from '../screens/ProfileScreen/ProfileScreen';
 
-class ProfileScreen extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Profile Screen</Text>
-      </View>
-    );
-  }
-}
 class OrderScreen extends React.Component {
   render() {
     return (

@@ -61,6 +61,7 @@ export default class Filter extends React.Component {
             </View>
           </View>
         </Modal>
+
         <TouchableOpacity
           onPress={() => {
             this.displayModal(true);

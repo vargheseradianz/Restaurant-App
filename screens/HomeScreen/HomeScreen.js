@@ -14,7 +14,7 @@ import { Body, Title, Card, CardItem, Left, Right, Input } from 'native-base';
 //import Button from '../LoginScreen/button';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { SearchBar } from 'react-native-elements';
-import Home from './Home';
+import SwiperBanner from '../../component/swiperBanner/Swipper';
 import Header from '../../component/Header';
 import BottomTab from '../../component/bottomTab';
 import SwitchItem from '../../component/switch';
@@ -49,13 +49,26 @@ export default function HomeScreen() {
 
   renderList = ({ item }) => {
     return (
-      <View style={{ marginRight: 5, marginLeft: 5 }}>
+      <View
+        style={{
+          marginRight: 5,
+          marginLeft: 5,
+          elevation: 5,
+          backgroundColor: '#add8e6',
+          shadowColor: '#000000',
+          shadowOpacity: 0.8,
+          shadowRadius: 2,
+          borderRadius: 10,
+
+          marginTop: 10,
+        }}
+      >
         <Image
           source={{ uri: item }}
           style={{
             width: '100%',
             height: 200,
-            marginTop: 20,
+            marginTop: 5,
             borderRadius: 10,
             marginBottom: 10,
           }}
@@ -63,9 +76,10 @@ export default function HomeScreen() {
         <View
           style={{
             flexDirection: 'row',
-            backgroundColor: '#808080',
+            backgroundColor: '#20b2aa',
             height: 50,
             borderRadius: 10,
+            marginBottom: 10,
           }}
         >
           <Text
@@ -97,7 +111,7 @@ export default function HomeScreen() {
           <TouchableOpacity onPress={() => {}}>
             <View
               style={{
-                backgroundColor: '#d3d3d3',
+                backgroundColor: '#f0f8ff',
                 alignItems: 'flex-end',
                 justifyContent: 'center',
                 borderRadius: 15,
@@ -125,7 +139,7 @@ export default function HomeScreen() {
   return (
     <ScrollView>
       <Header />
-      <Home />
+      <SwiperBanner />
       <Animated.FlatList
         contentInset={{ top: HEADER_HEIGHT }}
         contentOffset={{ y: -HEADER_HEIGHT }}

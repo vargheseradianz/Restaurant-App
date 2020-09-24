@@ -8,7 +8,7 @@ export default function SwitchItem() {
       <Switch
         value={switchEnable}
         onValueChange={(value) => setSwitchEnable(value)}
-        trackColor={{ true: 'red' }}
+        trackColor={{ true: 'green' }}
       />
     </View>
   );
